@@ -2,19 +2,19 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_bloc/src/utils/to_string.dart';
 
-class SimpleMaterialStateProperty<T> extends Equatable
-    implements MaterialStateProperty<T> {
+class SimpleWidgetStateProperty<T> extends Equatable
+    implements WidgetStateProperty<T> {
   final T normal;
   final T disabled;
 
-  const SimpleMaterialStateProperty({
+  const SimpleWidgetStateProperty({
     required this.normal,
     required this.disabled,
   });
 
   @override
-  T resolve(Set<MaterialState> states) {
-    if (states.contains(MaterialState.disabled)) return disabled;
+  T resolve(Set<WidgetState> states) {
+    if (states.contains(WidgetState.disabled)) return disabled;
     return normal;
   }
 

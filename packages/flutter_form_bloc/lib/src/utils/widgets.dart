@@ -25,7 +25,7 @@ class DefaultFieldBlocBuilderTextStyle extends StatelessWidget {
         isEnabled: isEnabled,
         style: style ?? formStyle.textStyle ?? theme.textTheme.titleMedium!,
         color: formStyle.textColor ??
-            SimpleMaterialStateProperty(
+            SimpleWidgetStateProperty(
               normal: theme.textTheme.titleMedium!.color,
               disabled: theme.disabledColor,
             ),
