@@ -1741,6 +1741,7 @@ class _SuggestionsBox {
         timer += 170;
 
         if (widgetMounted &&
+            context.mounted &&
             (MediaQuery.of(context).viewInsets != initial ||
                 _findRootMediaQuery() != initialRootMediaQuery)) {
           return true;

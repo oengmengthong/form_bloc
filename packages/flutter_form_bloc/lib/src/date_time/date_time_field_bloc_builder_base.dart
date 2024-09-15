@@ -170,7 +170,7 @@ class _DateTimeFieldBlocBuilderBaseState<T>
     } else if (widget.type == DateTimeFieldBlocBuilderBaseType.both) {
       final date = await _showDatePicker(context);
 
-      if (date != null) {
+      if (date != null && context.mounted) {
         final time = await _showTimePicker(context);
         result = _combine(date, time);
       }
