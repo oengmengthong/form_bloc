@@ -732,7 +732,7 @@ class TextFieldBlocBuilder extends StatefulWidget {
   }
 
   @override
-  _TextFieldBlocBuilderState createState() => _TextFieldBlocBuilderState();
+  State<TextFieldBlocBuilder> createState() => _TextFieldBlocBuilderState();
 }
 
 class _TextFieldBlocBuilderState extends State<TextFieldBlocBuilder> {

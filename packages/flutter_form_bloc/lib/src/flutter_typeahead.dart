@@ -590,7 +590,7 @@ class TypeAheadField<T> extends StatefulWidget {
         super(key: key);
 
   @override
-  _TypeAheadFieldState<T> createState() => _TypeAheadFieldState<T>();
+  State<TypeAheadField<T>> createState() => _TypeAheadFieldState<T>();
 }
 
 class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
@@ -601,6 +601,7 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
 
   TextEditingController? get _effectiveController =>
       widget.textFieldConfiguration.controller ?? _textEditingController;
+
   FocusNode? get _effectiveFocusNode =>
       widget.textFieldConfiguration.focusNode ?? _focusNode;
   late VoidCallback _focusNodeListener;
@@ -609,6 +610,7 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
 
   // Timer that resizes the suggestion box on each tick. Only active when the user is scrolling.
   Timer? _resizeOnScrollTimer;
+
   // The rate at which the suggestion box will resize when the user is scrolling
   final Duration _resizeOnScrollRefreshRate = const Duration(milliseconds: 500);
 
@@ -650,6 +652,7 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
 
   late final KeyboardVisibilityController keyboardVisibilityController;
   late final bool isWebMobile;
+
   @override
   void initState() {
     super.initState();
@@ -1281,9 +1284,9 @@ class _SuggestionsListState<T> extends State<_SuggestionsList<T>>
 
       initialItemCount: suggestions.length,
 
-      reverse: widget.suggestionsBox!.direction == AxisDirection.down
-          ? false
-          : true, // reverses the list to start at the bottom
+      reverse:
+          widget.suggestionsBox!.direction == AxisDirection.down ? false : true,
+      // reverses the list to start at the bottom
 
       itemBuilder: buildItem,
     );

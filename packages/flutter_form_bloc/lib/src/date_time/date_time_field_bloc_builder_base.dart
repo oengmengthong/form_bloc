@@ -107,7 +107,7 @@ class DateTimeFieldBlocBuilderBase<T> extends StatefulWidget {
   final TimeOfDay initialTime;
 
   @override
-  _DateTimeFieldBlocBuilderBaseState createState() =>
+  State<DateTimeFieldBlocBuilderBase<T>> createState() =>
       _DateTimeFieldBlocBuilderBaseState();
 
   DateTimeFieldTheme themeStyleOf(BuildContext context) {
