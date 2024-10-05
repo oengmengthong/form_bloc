@@ -13,12 +13,17 @@ dependencies:
     sdk: flutter
 
   flutter_bloc: ^8.0.1
-  form_bloc: ^0.31.0
   equatable: ^2.0.3
   rxdart: ^0.27.3
   flutter_keyboard_visibility: ^5.4.1
   collection: ^1.15.0
   intl: ^0.19.0
+
+  form_bloc: 
+    git:
+      url: https://github.com/enzo-santos/form_bloc
+      path: packages/form_bloc
+      ref: master
 
 dev_dependencies:
   flutter_test:
