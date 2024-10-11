@@ -10,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_form_bloc: ^0.31.0
+  flutter_form_bloc:
+    git:
+      url: https://github.com/oengmengthong/form_bloc
+      path: packages/flutter_form_bloc
+      ref: master
   animations: ^2.0.7
   flutter_syntax_view: ^4.0.0
   flash: ^3.0.5+1

@@ -21,7 +21,7 @@ dependencies:
 
   form_bloc: 
     git:
-      url: https://github.com/enzo-santos/form_bloc
+      url: https://github.com/oengmengthong/form_bloc
       path: packages/form_bloc
       ref: master
 
