@@ -155,7 +155,7 @@ class _AppDrawerState extends State<AppDrawer> with RouteAware {
       alignment: Alignment.centerLeft,
       child: Text(
         'Examples',
-        style: Theme.of(context).textTheme.headline6,
+        style: Theme.of(context).textTheme.titleLarge,
       ),
     );
   }

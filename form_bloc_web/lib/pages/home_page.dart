@@ -75,8 +75,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     style: TextButton.styleFrom(
-                      primary: Colors.black38,
-                      shape: RoundedRectangleBorder(
+                      foregroundColor: Colors.black38, shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                         side: const BorderSide(
                           width: 2,
